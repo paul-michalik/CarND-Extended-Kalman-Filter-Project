@@ -3,6 +3,11 @@
 
 # build files
 build/
+products/
+
+# Visual Studio temporaries
+**/.vs/
+**/packages/
 
 # editor config
 .vscode/
