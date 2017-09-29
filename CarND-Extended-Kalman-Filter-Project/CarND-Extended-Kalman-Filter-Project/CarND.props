@@ -3,8 +3,8 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <OutDir>$(SolutionDir)..\products\msbuild.windows.$(PlatformShortName).$(PlatformToolset).$(Configuration)</OutDir>
-    <IntDir>$(SolutionDir)..\products\msbuild.windows.$(PlatformShortName).$(PlatformToolset).$(Configuration)\tmp</IntDir>
+    <OutDir>$(SolutionDir)..\products\msbuild.windows.$(PlatformShortName).$(PlatformToolset).$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\products\msbuild.windows.$(PlatformShortName).$(PlatformToolset).$(Configuration)\tmp\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
