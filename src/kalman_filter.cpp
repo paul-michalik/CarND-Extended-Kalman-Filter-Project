@@ -39,12 +39,6 @@ namespace ekf {
     double normalize_angle(double phi)
     {
         return std::atan2(std::sin(phi), std::cos(phi));
-        //if (phi > M_PI) {
-        //    phi = phi - 2 * M_PI;
-        //} else if (phi < -M_PI) {
-        //    phi = phi + 2 * M_PI;
-        //}
-        //return phi;
     }
 }
 
