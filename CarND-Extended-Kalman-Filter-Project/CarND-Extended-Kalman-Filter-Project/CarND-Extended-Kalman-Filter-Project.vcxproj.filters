@@ -21,10 +21,10 @@
     <ClCompile Include="..\..\src\kalman_filter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\main.cpp">
+    <ClCompile Include="..\..\src\tools.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\tools.cpp">
+    <ClCompile Include="..\..\src\main-win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

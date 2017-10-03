@@ -119,7 +119,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\FusionEKF.cpp" />
     <ClCompile Include="..\..\src\kalman_filter.cpp" />
-    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\main-win.cpp" />
     <ClCompile Include="..\..\src\tools.cpp" />
   </ItemGroup>
   <ItemGroup>
