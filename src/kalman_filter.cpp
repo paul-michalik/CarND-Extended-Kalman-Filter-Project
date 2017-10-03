@@ -4,7 +4,7 @@
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
 
-namespace ops {
+namespace ekf {
     void update_from_residual(KalmanFilter& kf, const Eigen::VectorXd& y)
     {
         /**
@@ -76,7 +76,7 @@ void KalmanFilter::Update(const VectorXd &z) {
   TODO:
     * update the state by using Kalman Filter equations
   */
-    ops::update_from_residual(*this, z - H_ * x_ /* z_pred = H*x */);
+    ekf::update_from_residual(*this, z - H_ * x_ /* z_pred = H*x */);
 }
 
 void KalmanFilter::UpdateEKF(const VectorXd &z) {
@@ -85,8 +85,8 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
     * update the state by using Extended Kalman Filter equations
   */
 
-    auto z_pred = ops::cartesian_to_polar(x_);
+    auto z_pred = ekf::cartesian_to_polar(x_);
     VectorXd y = z - z_pred;
-    y[1] = ops::normalize_angle(y[1]);
-    ops::update_from_residual(*this, y /* y */);
+    y[1] = ekf::normalize_angle(y[1]);
+    ekf::update_from_residual(*this, y /* y */);
 }

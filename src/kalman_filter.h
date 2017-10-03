@@ -65,7 +65,7 @@ public:
   void UpdateEKF(const Eigen::VectorXd &z);
 };
 
-namespace ops {
+namespace ekf {
     void update_from_residual(KalmanFilter& kf, const Eigen::VectorXd& y);
     double normalize_angle(double phi);
     Eigen::VectorXd cartesian_to_polar(Eigen::VectorXd const& x);
