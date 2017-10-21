@@ -17,7 +17,7 @@
                 },
                 {
                     "name": "CMAKE_TOOLCHAIN_FILE",
-                    "value": "${env.USERPROFILE}\\Software\\vcpkg\\vcpkg\\scripts\\buildsystems\\vcpckg.cmake"
+                    "value": "${env.USERPROFILE}\\Software\\vcpkg\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
                 }
             ]
         },
